@@ -70,7 +70,7 @@ GRANDES TELAS: ACIMA de 1200px.
     }
 
     main::after{
-        display: block;
+        display: blockx;
         text-align: center;
         font-size: 0.4em;
         content: 'Essa impressão foi desenvolvida no curso em video';
