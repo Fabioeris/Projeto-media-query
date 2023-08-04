@@ -59,3 +59,33 @@ GRANDES TELAS: ACIMA de 1200px.
     img#tv {display: block;}
     img#impressão {display: none;}
 }
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main{
+        border: dashed black;
+    }
+
+    main::after{
+        display: block;
+        text-align: center;
+        font-size: 0.4em;
+        content: 'Essa impressão foi desenvolvida no curso em video';
+        text-decoration: overline;
+    }
+    
+    main>h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+    
+    img#phone {display: none;}
+    img#tablet{display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#impressão {display: block;}
+}
